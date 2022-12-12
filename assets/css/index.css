@@ -29,7 +29,9 @@ img.img-fluid.w-50 {
   height: 75%;
   top: 20px;
 }
-
+.nav-h a{
+  text-decoration: none;
+}
 .colr1 {
   background-color: #ff571e;
 }
@@ -102,13 +104,16 @@ img.img-fluid.w-50 {
   top: 10px;
   position: relative;
 }
+.inser {
+  margin: 100px;
+}
 .fav h4 {
   font-size: 24px;
   position: relative;
   top: 7px;
 }
 .frm1{
-  margin: 40px -50px;
+  margin: 40px -10px;
 }
 .fav1 {
   color: #ff571e;
