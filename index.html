@@ -29,7 +29,7 @@
                             <h1>BookStore</h1>
                         </a>
                     </div>
-                    <div class="col-sm-12 col-md-7 order-3 order-md-2 pt-4"> <input type="text"
+                    <div class="col-sm-12 col-md-7 order-3 order-md-2 pt-4"> <input type="text" placeholder="Enter Text"
                             class="form-control frm1" id="inpt" onkeyup="myinput()">
                     </div>
                     <div class="col-sm-6 col-6  col-md-2 order-2 order-md-3 text-center fs-1 pt-3 ">
@@ -44,6 +44,7 @@
                                 </li>
                                 <li><a class="dropdown-item" href="login.html">Log In</a>
                                 </li>
+                            
                             </ul>
                         </div>
                     </div>
@@ -81,7 +82,7 @@
                                     <li><a class="dropdown-item"
                                             href="category.html?category=historian_fiction">Historian_Fiction</a></li>
                                     <li><a class="dropdown-item"
-                                            href="category.html?category=story_books">Story_Books</a></li>
+                                            href="category.html">Story_Books</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -124,13 +125,13 @@
                 <h1 class="text-center"><span class="border p-2 fav1"> Featured Books</span></h1>
             </div>
             <div class="row g-4 my-5 mx-auto owl-carousel owl-theme">
-                <div class="col product-item mx-auto">
+                <div class="col product-item mx-auto" id="item1">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/Comics_book/Blackwater.jpg" alt=""
+                        <a href="category.html?category=comics_book"><img src="assets/img/img/Comics_book/Blackwater.jpg" alt=""
                                 class="img-fluid d-block mx-auto"></a>
-                        <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="col-6 py-2">
-                                <i class="fa fa-cart-plus"></i> Add to Cart
+                        <div class="row btns w-100 mx-auto text-center " id="cart">
+                            <button type="button" class="col-6 py-2" onclick="addcart(item1)">
+                                <i class="fa fa-cart-plus" ></i> Add to Cart
                             </button>
                             <button type="button" class="col-6 py-2">
                                 <i class="fa fa-binoculars"></i> View
@@ -139,7 +140,7 @@
                     </div>
 
                     <div class="product-info p-3">
-                        <span class="product-type">Author: Ethan McCallum</span>
+                        <span class="product-type title">Author: Ethan McCallum</span>
                         <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Bad Data Handbook:
                             Cleaning Up The Data So You Can Get Back To Work</a>
                         <span class="product-price">$ 100.50</span>
@@ -148,13 +149,13 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/Comics_book/Buffy the Last Vampire Slayer.jpg"
+                        <a href="category.html?category=comics_book"><img src="assets/img/img/Comics_book/Buffy the Last Vampire Slayer.jpg"
                                 alt="" class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
                         </span>
                         <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="col-6 py-2">
+                            <button type="button" class="col-6 py-2" onclick="addcart(item1)">
                                 <i class="fa fa-cart-plus"></i> Add to Cart
                             </button>
                             <button type="button" class="col-6 py-2">
@@ -174,12 +175,12 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/Comics_book/Crumbs.jpg" alt=""
+                        <a href="category.html?category=comics_book"><img src="assets/img/img/Comics_book/Crumbs.jpg" alt=""
                                 class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
                         </span>
-                        <div class="row btns w-100 mx-auto text-center">
+                        <div class="row btns w-100 mx-auto text-center" onclick="addcart(item1)">
                             <button type="button" class="col-6 py-2">
                                 <i class="fa fa-cart-plus"></i> Add to Cart
                             </button>
@@ -200,13 +201,13 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/Comics_book/Devil's Reign A Marvel Event.jpg"
+                        <a href="category.html?category=comics_book"><img src="assets/img/img/Comics_book/Devil's Reign A Marvel Event.jpg"
                                 alt="" class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
                         </span>
                         <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="col-6 py-2">
+                            <button type="button" class="col-6 py-2" onclick="addcart(item1)">
                                 <i class="fa fa-cart-plus"></i> Add to Cart
                             </button>
                             <button type="button" class="col-6 py-2">
@@ -226,12 +227,12 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/Comics_book/Injustice Year Zero.jpg" alt=""
+                        <a href="category.html?category=comics_book"><img src="assets/img/img/Comics_book/Injustice Year Zero.jpg" alt=""
                                 class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
                         </span>
-                        <div class="row btns w-100 mx-auto text-center">
+                        <div class="row btns w-100 mx-auto text-center" onclick="addcart(item1)">
                             <button type="button" class="col-6 py-2">
                                 <i class="fa fa-cart-plus"></i> Add to Cart
                             </button>
@@ -252,12 +253,12 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/Comics_book/Saga.jpg" alt=""
+                        <a href="category.html?category=comics_book"><img src="assets/img/img/Comics_book/Saga.jpg" alt=""
                                 class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
                         </span>
-                        <div class="row btns w-100 mx-auto text-center">
+                        <div class="row btns w-100 mx-auto text-center" onclick="addcart(item1)">
                             <button type="button" class="col-6 py-2">
                                 <i class="fa fa-cart-plus"></i> Add to Cart
                             </button>
@@ -277,12 +278,12 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/Comics_book/Supergirl Woman of Tomorrow.jpg" alt=""
+                        <a href="category.html?category=comics_book"><img src="assets/img/img/Comics_book/Supergirl Woman of Tomorrow.jpg" alt=""
                                 class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
                         </span>
-                        <div class="row btns w-100 mx-auto text-center">
+                        <div class="row btns w-100 mx-auto text-center" onclick="addcart(item1)">
                             <button type="button" class="col-6 py-2">
                                 <i class="fa fa-cart-plus"></i> Add to Cart
                             </button>
@@ -303,14 +304,14 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"> <img
+                        <a href="category.html?category=comics_book"> <img
                                 src="assets/img/img/Comics_book/Star Wars The High Republic Adventures, Vol. 2.jpg"
                                 alt="" class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
                         </span>
                         <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="col-6 py-2">
+                            <button type="button" class="col-6 py-2" onclick="addcart(item1)">
                                 <i class="fa fa-cart-plus"></i> Add to Cart
                             </button>
                             <button type="button" class="col-6 py-2">
@@ -343,7 +344,7 @@
             <div class="row g-4 my-5 mx-auto owl-carousel owl-theme">
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/story_books/1.jpg" alt=""
+                        <a href="category.html"><img src="assets/img/img/story_books/1.jpg" alt=""
                                 class="img-fluid d-block mx-auto"></a>
                         <div class="row btns w-100 mx-auto text-center">
                             <button type="button" class="col-6 py-2">
@@ -365,7 +366,7 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/story_books/Bazyl i Licho.jpg" alt=""
+                        <a href="category.html"><img src="assets/img/img/story_books/Bazyl i Licho.jpg" alt=""
                                 class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
@@ -391,7 +392,7 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/story_books/c-1.jpg" alt=""
+                        <a href="category.html"><img src="assets/img/img/story_books/c-1.jpg" alt=""
                                 class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
@@ -417,7 +418,7 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/story_books/c-2.jpg" alt=""
+                        <a href="category.html"><img src="assets/img/img/story_books/c-2.jpg" alt=""
                                 class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
@@ -443,7 +444,7 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/story_books/c-3.jpg" alt=""
+                        <a href="category.html"><img src="assets/img/img/story_books/c-3.jpg" alt=""
                                 class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
@@ -469,7 +470,7 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/story_books/Escape from Hat.jpg" alt=""
+                        <a href="category.html"><img src="assets/img/img/story_books/Escape from Hat.jpg" alt=""
                                 class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
@@ -494,7 +495,7 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"><img src="assets/img/img/story_books/Two Dogs.jpg" alt=""
+                        <a href="category.html"><img src="assets/img/img/story_books/Two Dogs.jpg" alt=""
                                 class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
@@ -520,7 +521,7 @@
                 </div>
                 <div class="col product-item mx-auto">
                     <div class="product-img">
-                        <a href="pagr.html"> <img src="assets/img/img/story_books/J.R. Silver Writes Her World.jpg"
+                        <a href="category.html"> <img src="assets/img/img/story_books/J.R. Silver Writes Her World.jpg"
                                 alt="" class="img-fluid d-block mx-auto"></a>
                         <span class="heart-icon">
                             <i class="far fa-heart"></i>
@@ -685,25 +686,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script src="assets/js/index.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
+        autoplay: false
+        autoplayTimeout: 5000
+        autoplayHoverPause: false
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 4,
             loop: true,
             margin: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 4
-                }
-            }
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
         })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+
+
     </script>
 </body>
 
